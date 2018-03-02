@@ -1,0 +1,11 @@
+- action:
+  - data:
+      message: hello world
+    service: persistent_notification.create
+  alias: understairs_door_light
+  condition: []
+  id: '1519864126179'
+  trigger:
+  - entity_id: binary_sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_doorwindow_sensor
+    platform: state
+    to: 'on'

@@ -1,0 +1,73 @@
+homeassistant:
+  name: Home
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: 0
+  unit_system: metric
+  time_zone: Europe/London
+  customize: !include customize.yaml
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  # Secrets are defined in the file secrets.yaml
+  api_password: !secret http_password
+  trusted_networks: 
+    - 127.0.0.1
+    - 192.168.1.0/24
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  # base_url: casacube.ddns.net
+  base_url: casacube.duckdns.org:8123
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+
+updater:
+  include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+sun:
+
+# Weather prediction
+sensor:
+  - platform: yr
+
+# Text to speech
+tts:
+  - platform: google
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+
+zwave:
+  usb_path: /dev/ttyACM0
+  network_key: "0Xda, 0Xa7, 0X1e, 0X01, 0Xfa, 0Xfd, 0X71, 0Xde, 0Xc9, 0X1f, 0Xd4, 0X0d, 0Xc1, 0X80, 0X9b, 0x55"
+
+google_assistant:
+  project_id: !secret google_project_id
+  client_id: !secret google_client_id
+  access_token: !secret google_access_token
+  agent_user_id: casacube_hass
+  api_key: !secret google_api_key
+  exposed_domains:
+    - light
+
