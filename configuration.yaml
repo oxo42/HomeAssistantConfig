@@ -69,5 +69,5 @@ google_assistant:
   agent_user_id: casacube_hass
   api_key: !secret google_api_key
   exposed_domains:
-    - light
+    - switch
 

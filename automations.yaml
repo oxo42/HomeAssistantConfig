@@ -1,11 +1,22 @@
-- action:
-  - data:
-      message: hello world
-    service: persistent_notification.create
-  alias: understairs_door_light
-  condition: []
-  id: '1519864126179'
+- alias: Turn on Toilet light when motion
   trigger:
-  - entity_id: binary_sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_doorwindow_sensor
+  - entity_id: sensor.fibaro_system_fgms001zw5_motion_sensor_burglar
     platform: state
-    to: 'on'
+    to: '8'
+  action:
+  - service: light.turn_on
+    data:
+      entity_id: light.toilet
+      brightness: 20
+
+- alias: Turn off toilet light after 5 minutess
+  trigger:
+  - entity_id: sensor.fibaro_system_fgms001zw5_motion_sensor_burglar
+    platform: state
+    to: '0'
+    for:
+      minutes: 2
+  action:
+  - service: light.turn_off
+    data:
+      entity_id: light.toilet

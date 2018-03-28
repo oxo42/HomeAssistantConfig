@@ -1,105 +1,184 @@
 media_player.bedroom_speaker:
+  name:
   platform: cast
   unique_id: 570fb796-ae86-3004-3310-20101a284e40
 light.entrance_hall_light:
+  name:
   platform: hue
   unique_id: 00:17:88:01:03:12:4f:c3-0b
 light.bedroom_ceiling_light:
+  name:
   platform: hue
   unique_id: 00:17:88:01:03:12:4d:5c-0b
 light.cal_bedside_light:
+  name:
   platform: hue
   unique_id: 00:17:88:01:03:61:8f:c8-0b
 light.ox_bedside_light:
+  name:
   platform: hue
   unique_id: 00:17:88:01:03:40:63:e4-0b
 light.bedroom_ceiling_center:
+  name:
   platform: hue
   unique_id: 00:17:88:01:03:12:65:de-0b
 sensor.alarm_type:
+  name:
   platform: zwave
   unique_id: 2-72057594077528065
 sensor.alarm_level:
+  name:
   platform: zwave
   unique_id: 2-72057594077528081
 binary_sensor.fibaro_system_fgdw002_door_opening_sensor_2_sensor:
+  name:
   platform: zwave
   unique_id: 2-72057594076463104
 sensor.fibaro_system_fgdw002_door_opening_sensor_2_temperature:
+  name:
   platform: zwave
   unique_id: 2-72057594076479506
 sensor.fibaro_system_fgdw002_door_opening_sensor_2_sourcenodeid:
+  name:
   platform: zwave
   unique_id: 2-72057594077528097
 sensor.fibaro_system_fgdw002_door_opening_sensor_2_heat:
+  name:
   platform: zwave
   unique_id: 2-72057594077528177
 sensor.fibaro_system_fgdw002_door_opening_sensor_2_access_control:
+  name:
   platform: zwave
   unique_id: 2-72057594077528209
 sensor.fibaro_system_fgdw002_door_opening_sensor_2_burglar:
+  name:
   platform: zwave
   unique_id: 2-72057594077528225
 sensor.fibaro_system_fgdw002_door_opening_sensor_2_power_management:
+  name:
   platform: zwave
   unique_id: 2-72057594077528241
-light.level:
+light.toilet:
+  name: Toilet Light
   platform: zwave
   unique_id: 3-72057594093076481
 sensor.alarm_type_2:
+  name:
   platform: zwave
   unique_id: 4-72057594111082497
 sensor.alarm_level_2:
+  name:
   platform: zwave
   unique_id: 4-72057594111082513
 binary_sensor.sensor:
+  name:
   platform: zwave
   unique_id: 4-72057594110017536
 sensor.fibaro_system_fgdw002_door_opening_sensor_2_temperature_2:
+  name:
   platform: zwave
   unique_id: 4-72057594110033938
 sensor.fibaro_system_fgdw002_door_opening_sensor_2_sourcenodeid_2:
+  name:
   platform: zwave
   unique_id: 4-72057594111082529
 sensor.fibaro_system_fgdw002_door_opening_sensor_2_heat_2:
+  name:
   platform: zwave
   unique_id: 4-72057594111082609
 sensor.fibaro_system_fgdw002_door_opening_sensor_2_access_control_2:
+  name:
   platform: zwave
   unique_id: 4-72057594111082641
 sensor.fibaro_system_fgdw002_door_opening_sensor_2_burglar_2:
+  name:
   platform: zwave
   unique_id: 4-72057594111082657
 sensor.fibaro_system_fgdw002_door_opening_sensor_2_power_management_2:
+  name:
   platform: zwave
   unique_id: 4-72057594111082673
 sensor.alarm_type_3:
+  name:
   platform: zwave
   unique_id: 5-72057594127859713
 sensor.alarm_level_3:
+  name:
   platform: zwave
   unique_id: 5-72057594127859729
 binary_sensor.sensor_2:
+  name:
   platform: zwave
   unique_id: 5-72057594126794752
 binary_sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_doorwindow_sensor:
+  name:
   platform: zwave
   unique_id: 5-72057594126794768
 binary_sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_tamper_sensor:
+  name:
   platform: zwave
   unique_id: 5-72057594126794784
 sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_temperature:
+  name:
   platform: zwave
   unique_id: 5-72057594126811154
 sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_luminance:
+  name:
   platform: zwave
   unique_id: 5-72057594126811186
 sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_sourcenodeid:
+  name:
   platform: zwave
   unique_id: 5-72057594127859745
 sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_access_control:
+  name:
   platform: zwave
   unique_id: 5-72057594127859857
 sensor.philio_technology_corporation_pst02a_4_in_1_multisensor_burglar:
+  name:
   platform: zwave
   unique_id: 5-72057594127859873
+media_player.kitchen_speaker:
+  name:
+  platform: cast
+  unique_id: b7549b5a-6514-4f45-c741-231bec1cdf33
+media_player.living_room_tv:
+  name:
+  platform: cast
+  unique_id: 0e536e46-8649-3e23-75fa-47a977dc3914
+sensor.alarm_type_4:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144636929
+sensor.alarm_level_4:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144636945
+binary_sensor.sensor_3:
+  name:
+  platform: zwave
+  unique_id: 6-72057594143571968
+sensor.fibaro_system_fgms001zw5_motion_sensor_temperature:
+  name:
+  platform: zwave
+  unique_id: 6-72057594143588370
+sensor.fibaro_system_fgms001zw5_motion_sensor_luminance:
+  name:
+  platform: zwave
+  unique_id: 6-72057594143588402
+sensor.fibaro_system_fgms001zw5_motion_sensor_seismic_intensity:
+  name:
+  platform: zwave
+  unique_id: 6-72057594143588754
+sensor.fibaro_system_fgms001zw5_motion_sensor_sourcenodeid:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144636961
+sensor.fibaro_system_fgms001zw5_motion_sensor_burglar:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144637089
+sensor.fibaro_system_fgms001zw5_motion_sensor_general:
+  name:
+  platform: zwave
+  unique_id: 6-72057594145341441
