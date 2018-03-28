@@ -1,4 +1,4 @@
-- alias: Turn on Toilet light when motion
+- alias: Toilet - Turn on lights when movement
   trigger:
   - entity_id: sensor.fibaro_system_fgms001zw5_motion_sensor_burglar
     platform: state
@@ -9,7 +9,7 @@
       entity_id: light.toilet
       brightness: 20
 
-- alias: Turn off toilet light after 5 minutess
+- alias: Toilet - Turn off light when movement stops
   trigger:
   - entity_id: sensor.fibaro_system_fgms001zw5_motion_sensor_burglar
     platform: state
