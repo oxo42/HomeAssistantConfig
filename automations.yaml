@@ -20,3 +20,40 @@
   - service: light.turn_off
     data:
       entity_id: light.toilet
+
+- alias: Living room TV - paused
+  trigger:
+  - entity_id: media_player.living_room_tv
+    platform: state
+    to: 'idle'
+  - entity_id: media_player.living_room_tv
+    platform: state
+    to: 'paused'
+  condition:
+    - condition: state
+      entity_id: sun.sun
+      state: below_horizon
+    - condition: template
+      value_template: "{{ states.media_player.living_room_tv.attributes.app_name in ['YouTube', 'Netflix'] }}"
+  action:
+    service: hue.hue_activate_scene
+    data:
+      group_name: 'Living room'
+      scene_name: 'Bright'
+
+- alias: Living room TV - playing
+  trigger:
+  - entity_id: media_player.living_room_tv
+    platform: state
+    to: 'playing'
+  condition:
+    - condition: state
+      entity_id: sun.sun
+      state: below_horizon
+    - condition: template
+      value_template: "{{ states.media_player.living_room_tv.attributes.app_name in ['YouTube', 'Netflix'] }}"
+  action:
+    service: hue.hue_activate_scene
+    data:
+      group_name: 'Living room'
+      scene_name: 'Dimmed'
