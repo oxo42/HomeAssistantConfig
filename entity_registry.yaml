@@ -182,3 +182,7 @@ sensor.fibaro_system_fgms001zw5_motion_sensor_general:
   name:
   platform: zwave
   unique_id: 6-72057594145341441
+light.living_room:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:03:b9:3d:cd-0b
