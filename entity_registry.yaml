@@ -30,36 +30,36 @@ sensor.alarm_level:
   name:
   platform: zwave
   unique_id: 2-72057594077528081
-binary_sensor.fibaro_system_fgdw002_door_opening_sensor_2_sensor:
+binary_sensor.stairs_door_sensor:
   name:
   platform: zwave
   unique_id: 2-72057594076463104
-sensor.fibaro_system_fgdw002_door_opening_sensor_2_temperature:
+sensor.stairs_door_temperature:
   name:
   platform: zwave
   unique_id: 2-72057594076479506
-sensor.fibaro_system_fgdw002_door_opening_sensor_2_sourcenodeid:
+sensor.stairs_door_sourcenodeid:
   name:
   platform: zwave
   unique_id: 2-72057594077528097
-sensor.fibaro_system_fgdw002_door_opening_sensor_2_heat:
+sensor.stairs_door_heat:
   name:
   platform: zwave
   unique_id: 2-72057594077528177
-sensor.fibaro_system_fgdw002_door_opening_sensor_2_access_control:
+sensor.stairs_door_access_control_1:
   name:
   platform: zwave
   unique_id: 2-72057594077528209
-sensor.fibaro_system_fgdw002_door_opening_sensor_2_burglar:
+sensor.stairs_door_burglar:
   name:
   platform: zwave
   unique_id: 2-72057594077528225
-sensor.fibaro_system_fgdw002_door_opening_sensor_2_power_management:
+sensor.stairs_door_power_management:
   name:
   platform: zwave
   unique_id: 2-72057594077528241
-light.toilet:
-  name: Toilet Light
+light.stairs:
+  name: Stairs Light
   platform: zwave
   unique_id: 3-72057594093076481
 sensor.alarm_type_2:
@@ -74,27 +74,27 @@ binary_sensor.sensor:
   name:
   platform: zwave
   unique_id: 4-72057594110017536
-sensor.fibaro_system_fgdw002_door_opening_sensor_2_temperature_2:
+sensor.stairs_door_temperature_2:
   name:
   platform: zwave
   unique_id: 4-72057594110033938
-sensor.fibaro_system_fgdw002_door_opening_sensor_2_sourcenodeid_2:
+sensor.stairs_door_sourcenodeid_2:
   name:
   platform: zwave
   unique_id: 4-72057594111082529
-sensor.fibaro_system_fgdw002_door_opening_sensor_2_heat_2:
+sensor.stairs_door_heat_2:
   name:
   platform: zwave
   unique_id: 4-72057594111082609
-sensor.fibaro_system_fgdw002_door_opening_sensor_2_access_control_2:
+sensor.stairs_door_access_control:
   name:
   platform: zwave
   unique_id: 4-72057594111082641
-sensor.fibaro_system_fgdw002_door_opening_sensor_2_burglar_2:
+sensor.stairs_door_burglar_2:
   name:
   platform: zwave
   unique_id: 4-72057594111082657
-sensor.fibaro_system_fgdw002_door_opening_sensor_2_power_management_2:
+sensor.stairs_door_power_management_2:
   name:
   platform: zwave
   unique_id: 4-72057594111082673
@@ -186,3 +186,7 @@ light.living_room:
   name:
   platform: hue
   unique_id: 00:17:88:01:03:b9:3d:cd-0b
+light.toilet:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:04:64:dc:8d-0b

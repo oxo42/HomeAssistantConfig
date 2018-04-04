@@ -71,3 +71,11 @@ google_assistant:
   exposed_domains:
     - switch
 
+device_tracker:
+  - platform: linksys_smart
+    host: 192.168.1.1
+    username: admin
+    password: !secret linksys_key
+    new_device_defaults:
+      track_new_devices: True
+      hide_if_away: False
