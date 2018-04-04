@@ -57,3 +57,25 @@
     data:
       group_name: 'Living room'
       scene_name: 'Dimmed'
+
+- alias: Stairs Cupboard - Turn on when sensor open
+  trigger:
+  - entity_id: sensor.stairs_door_access_control
+    platform: state
+    to: '22'
+  action:
+  - service: light.turn_on
+    data:
+      entity_id: light.stairs
+      brightness: 20
+
+- alias: Stairs Cupboard - Turn off when door closed
+  trigger:
+  - entity_id: sensor.stairs_door_access_control
+    platform: state
+    to: '23'
+  action:
+  - service: light.turn_off
+    data:
+      entity_id: light.stairs
+
