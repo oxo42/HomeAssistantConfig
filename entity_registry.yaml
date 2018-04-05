@@ -190,3 +190,11 @@ light.toilet:
   name:
   platform: hue
   unique_id: 00:17:88:01:04:64:dc:8d-0b
+light.upstairs:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:b3:59:bf-0b
+light.study:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:03:8a:a4:6f-0b
